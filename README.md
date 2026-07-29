@@ -21,7 +21,7 @@ This project bridges machine learning with intuitive web technologies to provide
 - Error Diagnosis & Debugging
 - Dataset Cleaning & Normalization
 - 
-  git clone https://github.com/samridhisinha1104/medicine.git
+  link: https://medicine-recommendation-yjmn.onrender.com
 
 # Project Structure
 ├── app.py                   # Flask backend
