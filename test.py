@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import numpy as np
 import pandas as pd
 import pickle  # Corrected import
+import os
 
 app = Flask(__name__)
 # load databasedataset===================================
@@ -14,7 +15,7 @@ diets = pd.read_csv("diets.csv")
 
 
 # load model===========================================
-svc = pickle.load(open('C:\\Users\\Samridhi Sinha\\OneDrive\\Desktop\\med\\model\\svc.pkl', 'rb'))
+svc = pickle.load(open(os.path.join(os.path.dirname(__file__), 'model', 'svc.pkl'), 'rb'))
 #============================================================
 # custome and helping functions
 #==========================helper funtions================
